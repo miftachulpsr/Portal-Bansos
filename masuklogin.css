@@ -1,0 +1,145 @@
+/* masuklogin.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex;
+}
+
+.card {
+    width: 10px; /* Atur sesuai kebutuhan */
+    height: 10px; /* Atur sesuai kebutuhan */
+    margin-left: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Untuk menyembunyikan bagian gambar yang meluap */
+}
+
+.sidebar {
+    width: 250px; /* Lebar sidebar */
+    background-color: #282c34;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+    transition: width 0.3s;
+}
+
+.sidebar .logo h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #61dafb;
+}
+
+.sidebar .nav {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.sidebar .nav li {
+    margin: 10px 0;
+}
+
+.sidebar .nav a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar .nav a.active, .sidebar .nav a:hover {
+    background-color: #61dafb;
+    color: #282c34;
+}
+
+.sidebar .footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+}
+
+.main-content {
+    margin-left: 250px; /* Menggeser konten utama ke kanan */
+    padding: 20px;
+    width: calc(100% - 250px); /* Mengatur lebar konten utama */
+}
+
+h2 {
+    margin-top: 0; /* Menghilangkan margin atas pada h2 */
+}
+
+table {
+    width: 70%; /* Lebar tabel 100% dari konten utama */
+    margin: 20px 0; /* Margin vertikal untuk tabel */
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+
+table th {
+    background-color: #009879;
+    color: #ffffff;
+    padding: 12px 15px;
+    text-transform: uppercase;
+}
+
+table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #dddddd;
+}
+
+table tr:nth-child(even) {
+    background-color: #f3f3f3;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+table, th, td {
+    border: 1px solid #dddddd;
+}
+
+table tr:first-child th {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+table tr:last-child td {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+.main-content h2 {
+    text-align: center;
+}
+

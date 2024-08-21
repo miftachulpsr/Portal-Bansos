@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan</title>
+    <link rel="stylesheet" href="pengajuan.css">
+</head>
+<body>
+    <header>
+        <h1>PORTAL BANSOS</h1>
+        <nav class="navigation">
+            <ul>
+                <li><a href="home.html">BERANDA</a></li>
+                <li><a href="informasi.html">INFORMASI</a></li>
+                <li><a href="cek.html">CEK BANSOS</a></li>
+                <li><a href="pengajuan.html">PENGAJUAN BANSOS</a></li>
+                <li><a href="login.html">LOG-IN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="login-container">
+        <form id="registrationForm">
+            <label for="namalengkap">Nama Lengkap</label>
+            <input type="text" id="namalengkap" name="namalengkap">
+            <label for="nik">Nomor Induk Kependudukan (NIK)</label>
+            <input type="text" id="nik" name="nik">
+            <label for="kk">No. KK</label>
+            <input type="text" id="kk" name="kk">
+            <label for="kepalakeluarga">Nama Kepala Keluarga</label>
+            <input type="text" id="kepalakeluarga" name="kepalakeluarga">
+            <label for="alamat">Alamat Lengkap</label>
+            <input type="text" id="alamat" name="alamat">
+            <label for="telepon">Nomor Telepon/HP</label>
+            <input type="text" id="telepon" name="telepon">
+            <label for="email">Alamat Email</label>
+            <input type="text" id="email" name="email">
+            <button type="submit">Daftar</button>
+        </form>
+
+        <br><br>
+
+        <h2>Data Terdaftar</h2>
+        <table border="1">
+            <tr>
+                <th>Nama Lengkap</th>
+                <th>NIK</th>
+                <th>No. KK</th>
+                <th>Nama Kepala Keluarga</th>
+                <th>Alamat Lengkap</th>
+                <th>Nomor Telepon/HP</th>
+                <th>Alamat Email</th>
+            </tr>
+            <tr>
+                <th>Monkey D Luffy</th>
+                <th>3507537898540001</th>
+                <th>3507098712345009</th>
+                <th>Monkey D. Garp</th>
+                <th>Desa Foosha East Blue</th>
+                <th>081246815769</th>
+                <th>luffykun@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Roronoa Zoro</th>
+                <th>3507535638764560</th>
+                <th>3507098712345009</th>
+                <th>Roronoa Zuhi</th>
+                <th>Kampung Bojong Kenya</th>
+                <th>081267895432</th>
+                <th>zoro@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Nami</th>
+                <th>3509367509874532</th>
+                <th>3507054678901234</th>
+                <th>Belle Mere</th>
+                <th>Desa Kokoyashi</th>
+                <th>081234567890</th>
+                <th>namichan@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Usopp</th>
+                <th>3507537898540001</th>
+                <th>3507098712345009</th>
+                <th>Yasopp</th>
+                <th>Desa Syrup, Pulau Gecko</th>
+                <th>081246815769</th>
+                <th>kaptenusopp@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Vinsmoke Sanji</th>
+                <th>1234567890123456</th>
+                <th>3507098712347766</th>
+                <th>Zeff</th>
+                <th>North Blue</th>
+                <th>081234561234</th>
+                <th>sanjipb@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Tony Tony Chopper</th>
+                <th>3507537898540001</th>
+                <th>3507098712345009</th>
+                <th>Dokter Chopper</th>
+                <th>Pulau Musim Dingin</th>
+                <th>081246815769</th>
+                <th>chopper@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Nico Robin</th>
+                <th>0987654321090987</th>
+                <th>1234567890123456</th>
+                <th>Nico Olvia</th>
+                <th>Desa Ohara, West Blue</th>
+                <th>081246815769</th>
+                <th>cocobin@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Cutty Flam</th>
+                <th>3507537898540001</th>
+                <th>3507098712345009</th>
+                <th>-</th>
+                <th>Lautan</th>
+                <th>081246815769</th>
+                <th>cybrogfranky@gmail.com</th>
+            </tr>
+            <tr>
+                <th>Brook</th>
+                <th>3507537898549999</th>
+                <th>3507098712345123</th>
+                <th>-</th>
+                <th>Kapal</th>
+                <th>081246815769</th>
+                <th>brooky@gmail.com</th>
+            </tr>
+        </table>
+        <div id="resultContainer">
+            <h2>Data Pengajuan</h2>
+            <table id="resultTable" border="2" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Nama Lengkap</th>
+                        <th>NIK</th>
+                        <th>No. KK</th>
+                        <th>Nama Kepala Keluarga</th>
+                        <th>Alamat Lengkap</th>
+                        <th>Nomor Telepon/HP</th>
+                        <th>Alamat Email</th>
+                    </tr>
+                </thead>
+                <tbody id="resultBody">
+                    <!-- Hasil pengajuan akan ditampilkan di sini -->
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Website Portal Penerimaan Bansos © 2024</p>
+    </footer>
+
+    <script src="pengajuan.js"></script>
+</body>
+</html>
